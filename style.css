@@ -1,0 +1,367 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container to center content */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Navigation */
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    position: sticky; /* Keeps nav at top when scrolling */
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #e74c3c; /* Red accent */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-nav {
+    background: #2c3e50;
+    color: #fff !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1; /* Makes columns equal width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .service-grid {
+        flex-direction: column; /* Stacks cards on mobile */
+    }
+    
+    header .container {
+        flex-direction: column;
+    }
+    
+    header ul {
+        margin-top: 15px;
+    }
+}
+
+
+/* Update the header container to align items nicely */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Limits the height of the nav bar */
+}
+
+/* Style the Logo Image */
+.logo-img {
+    height: 50px; /* Adjust this number to make your logo bigger/smaller */
+    width: auto;  /* Keeps the logo from looking squished */
+    display: block;
+}
+
+/* Optional: Add a smooth scroll effect to the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Enhanced Services Section */
+.services {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth animation */
+    border: 1px solid #eee;
+}
+
+/* "Hover" makes the card pop up when you mouse over it */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.icon {
+    font-size: 3rem; /* Makes the emoji icon large */
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.btn-text {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Add this to style.css for the Contact Form Labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Contact Section Layout */
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px 0;
+    text-align: left; /* Overrides the center align from your previous CSS */
+}
+
+.contact-info, .contact-form-container {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Info Items (Icon + Text) */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #e74c3c; /* Matches your red accent */
+    margin-right: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.info-item strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.info-item p, .info-item a {
+    color: #666;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.info-item a:hover {
+    color: #e74c3c;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* Connect With Us Section */
+.connect-with-us {
+    background-color: #fdfdfd;
+    padding: 60px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.connect-with-us h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.connect-with-us p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Base style for the circular buttons */
+.social-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect: makes the button lift up */
+.social-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Colors for each platform */
+.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.mail {
+    background-color: #e74c3c; /* Red to match your theme */
+}
+
+.phone {
+    background-color: #27ae60; /* Green for calls */
+}
+
